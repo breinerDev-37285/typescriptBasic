@@ -52,3 +52,21 @@ export type TPersonReturn = ReturnType<() => string>;
 
 
 //TODO: explicar el por que las interfaces las concidero variables y el type constantes.
+
+
+interface Person4 {
+  name: string;
+}
+
+
+interface Person4 {
+  age: number;
+}
+
+
+const obj: Person4 = {
+  name: 'Juan',
+  age: 3,
+}
+
+
