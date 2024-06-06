@@ -5,7 +5,9 @@
     "strict": true,
     "noImplicitAny": true,
     "outDir": "./dist",
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "baseUrl": "./src",
+    "paths": {"@base/*":["basic/*"]}
   },
   "include": [
     "src"

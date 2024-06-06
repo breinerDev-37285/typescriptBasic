@@ -9,8 +9,8 @@ import {
   TPersonParameters,
   TPersonReturn, 
   TPersonRecords
-} from "./interfaces/personas";
-import Animal from './class/animal'
+} from "../interfaces/personas";
+import Animal from '../class/animal'
 
 const Persona: TPersonPick = {
   age: 19,
