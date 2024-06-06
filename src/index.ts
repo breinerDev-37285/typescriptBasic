@@ -1,4 +1,4 @@
-import { Perro2, Gato2 } from '@base/class/basic'
+import { Perro2, Gato2 } from './basic/class/basic'
 
 
 
@@ -19,4 +19,4 @@ const p1 = new Perro2('azul');
 // p1.eat();
 // p1.test1();
 
-console.log("hola")
+p1.eat();
