@@ -10,9 +10,6 @@
     "paths": {
       "@base/*": ["basic/*"]
     },
-    "strictNullChecks": true,
-    "baseUrl": "./src",
-    "paths": {"@base/*":["basic/*"]}
   },
   "include": [
     "src"

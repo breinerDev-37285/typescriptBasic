@@ -19,4 +19,4 @@ const p1 = new Perro2('azul');
 // p1.eat();
 // p1.test1();
 
-console.log({p1})
+console.log("hola")
