@@ -113,14 +113,14 @@ export class Animal {
 
 }
 
-export class Perro2 {
+export class Perro2 extends Animal {
 
   constructor(color:string) {
-    // super(color);
+    super(color);
   }
 
   eat(){
-    // console.log(this.color);
+    console.log(this.color);
   }
 
   test1(){}
