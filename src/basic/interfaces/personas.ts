@@ -70,3 +70,6 @@ const obj: Person4 = {
 }
 
 
+
+
+

@@ -113,18 +113,20 @@ export class Animal {
 
 }
 
-export class Perro2 extends Animal{
+export class Perro2 extends Animal {
 
   constructor(color:string) {
     super(color);
   }
 
   eat(){
-     console.log(this.color);
+    console.log(this.color);
   }
 
-  //test1(){}
-  //test2(){}
+  test1(){
+    console.log('hola')
+  }
+  test2(){}
 
 }
 
@@ -134,4 +136,26 @@ export class Gato2 extends Animal {
   }
 
   
+}
+
+
+/**
+ * Patrón Singleton
+ */
+
+export class Database {
+
+  static instance:Database;
+
+  private constructor() {
+    // logica para iniciar la base
+  } 
+
+  static init() {
+    if ( !this.instance ) {
+      this.instance = new Database();
+    }
+
+    return this.instance;
+  }
 }
