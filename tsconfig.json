@@ -5,7 +5,12 @@
     "strict": true,
     "noImplicitAny": true,
     "outDir": "./dist",
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@base/*": ["./basic/*"]
+    },
   },
   "include": [
     "src"
