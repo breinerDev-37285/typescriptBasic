@@ -1,8 +1,8 @@
-import { Perro2, Gato2 } from '@base/class/basic'
+import { TestNamespace } from "@base/interfaces/index";
 
-
-
-
+const d: TestNamespace.Person ={
+  name: ''
+}
 
 // const a = new Perro1();
 
@@ -13,10 +13,14 @@ import { Perro2, Gato2 } from '@base/class/basic'
 
 // console.log(ob.getName());
 
+// const p1 = new Perro2("azul");
+// p1.eat();
+// p1.test1();
+
+// console.log({ p1 });
 
 
-const p1 = new Perro2('azul');
-p1.eat();
-p1.test1();
+// const d = Database.init();
 
-console.log({p1})
+
+// console.log('asdfalksdflkasdfsd')

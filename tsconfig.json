@@ -6,9 +6,10 @@
     "noImplicitAny": true,
     "outDir": "./dist",
     "strictNullChecks": true,
+    "experimentalDecorators": true,
     "baseUrl": "./src",
     "paths": {
-      "@base/*": ["basic/*"]
+      "@base/*": ["./basic/*"]
     },
   },
   "include": [
