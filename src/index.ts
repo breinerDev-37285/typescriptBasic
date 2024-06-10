@@ -1,4 +1,4 @@
-import { Perro2, Gato2 } from './basic/class/basic'
+import { Perro2, Gato2 } from '@base/class/basic'
 
 
 

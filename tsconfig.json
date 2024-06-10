@@ -8,7 +8,7 @@
     "strictNullChecks": true,
     "baseUrl": "./src",
     "paths": {
-      "@base/*": ["basic/*"]
+      "@base/*": ["./basic/*"]
     },
   },
   "include": [
