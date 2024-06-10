@@ -1,26 +1,27 @@
-import { TestNamespace } from "@base/interfaces/index";
+import { MyCustomError } from "@base/errors";
 
-const d: TestNamespace.Person ={
-  name: ''
+
+const TestError = () => {
+  try {
+    // aplicar cualquier logica
+
+    throw new MyCustomError('Error Personalizado', {
+      code: 500,
+      message: 'Error Personalizado',
+      data: {
+
+      }
+    });
+
+  } catch (error: unknown) {
+    //capturar el errror
+    console.log({error})
+  } finally {
+    // opcional, se ejecuta sin importar sin hay error
+    console.log('Se ejecuta el finally')
+  }
 }
 
-// const a = new Perro1();
-
-// const ob = {
-//   name: 'Loki',
-//   getName: a.getName //Override
-// }
-
-// console.log(ob.getName());
-
-// const p1 = new Perro2("azul");
-// p1.eat();
-// p1.test1();
-
-// console.log({ p1 });
 
 
-// const d = Database.init();
-
-
-// console.log('asdfalksdflkasdfsd')
+TestError();
