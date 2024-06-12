@@ -1,3 +1,9 @@
+import { Matriz } from "./matrizCaracol/Matriz";
+
+let matrizX4:Matriz = new Matriz(4)
+let matrizX5:Matriz = new Matriz(5)
+let matrizX6:Matriz = new Matriz(6)
+/*
 import {Texto} from "@pangrama/index";
 
 let texto:Texto = new Texto("El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja");
