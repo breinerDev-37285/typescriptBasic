@@ -9,7 +9,8 @@
     "experimentalDecorators": true,
     "baseUrl": "./src",
     "paths": {
-      "@base/*": ["./basic/*"]
+      "@base/*": ["./basic/*"],
+      "@algoritmos/*": ["./algoritmos/*"]
     },
   },
   "include": [

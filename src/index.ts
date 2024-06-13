@@ -1,27 +1,23 @@
-import { MyCustomError } from "@base/errors";
+import { bubble, Quicksort } from '@algoritmos/ordenamiento'
 
 
-const TestError = () => {
-  try {
-    // aplicar cualquier logica
+// serializar => JSON.stringify
+// deserializar => JSON.parse
 
-    throw new MyCustomError('Error Personalizado', {
-      code: 500,
-      message: 'Error Personalizado',
-      data: {
+const arr = [11, 4, 6, 2, 16, 5 ,9, 4];
 
-      }
-    });
+const telefonos = [{
+  precio: 200,
+  nombre: 'alcatel x',
+  destacado: true
+}, {
+  nombre: 'nokia 1100',
+  precio: 25
+}]
 
-  } catch (error: unknown) {
-    //capturar el errror
-    console.log({error})
-  } finally {
-    // opcional, se ejecuta sin importar sin hay error
-    console.log('Se ejecuta el finally')
-  }
-}
+// console.log(Quicksort(arr, 0, arr.length -1));
 
+const s = JSON.stringify(telefonos);
+const d = JSON.parse(s);
+console.log(d)
 
-
-TestError();
