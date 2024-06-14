@@ -13,7 +13,7 @@ export class Matriz {
 
     }
 
-    public calculateXPositionsExternLayer(dimentionLayer: number): number[] {
+    private calculateXPositionsExternLayer(dimentionLayer: number): number[] {
         let xPositionsExternLayer: number[] = new Array((dimentionLayer-1) ** 2);
         let index = 0;
         if (dimentionLayer === 1) {
@@ -57,7 +57,7 @@ export class Matriz {
 
         return xPositionsExternLayer;
     }
-    public calculateYPositionsExternLayer(dimentionLayer: number): number[] {
+    private calculateYPositionsExternLayer(dimentionLayer: number): number[] {
         let yPositionsExternLayer: number[] = new Array((dimentionLayer-1) ** 2);
         let index = 0;
         if (dimentionLayer === 1) {
@@ -108,7 +108,7 @@ export class Matriz {
 
 
     
-    public fillPositions() {
+    private fillPositions() {
         for (let i = this.dimention; i > 0; i-=2){
             let tmpXPositions:number[] = this.calculateXPositionsExternLayer(i);
             tmpXPositions.forEach(element => {
