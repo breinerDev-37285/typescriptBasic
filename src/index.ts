@@ -75,6 +75,11 @@ import {Texto} from "@pangrama/index";
 let texto:Texto = new Texto("El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja");
 console.log(texto.esPangrama);
 
+import {Texto} from "@pangrama/index";
+
+let texto:Texto = new Texto("El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja");
+console.log(texto.esPangrama);
+
 
 
 /*import { MyCustomError } from "@base/errors";
